@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  datacancelamento: 2014-06-11
+  turma_id: 
+  aluno_id: 
+
+two:
+  datacancelamento: 2014-06-11
+  turma_id: 
+  aluno_id: 

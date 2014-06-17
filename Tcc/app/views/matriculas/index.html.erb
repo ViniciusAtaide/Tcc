@@ -1,0 +1,6 @@
+<% @matriculas.each do |matricula| %>
+	<p>Nome:<%= matricula.aluno.nome %></p>
+	<p>Serie:<%= matricula.turma.serie %>, <%= matricula.turma.sub %></p>
+	<p>Turno: <%= matricula.turma.turno %></p>
+	<p>Responsável: <%= matricula.aluno.responsavel %></p>
+<% end %>
