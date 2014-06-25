@@ -1,6 +1,6 @@
 class CreateAvaliacaos < ActiveRecord::Migration
   def change
-    create_table :avaliacaos do |t|
+    create_table :avaliacoes do |t|
       t.integer :nota
       t.integer :periodo
       t.integer :ano

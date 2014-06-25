@@ -1,4 +1,8 @@
 class Disciplina < ActiveRecord::Base
-  belongs_to :plano
-  has_many :avaliacaos
+  has_many :planos
+  has_many :avaliacoes
+
+  def display_name
+  	self.nome
+  end
 end

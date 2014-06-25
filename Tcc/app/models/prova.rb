@@ -1,3 +1,7 @@
 class Prova < ActiveRecord::Base
-  belongs_to :avaliacao
+  has_one :avaliacao
+
+  def display_name
+  	self.descricao
+  end
 end

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
 
+  devise_for :useres
+  devise_for :admin_useres, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :matriculas do
     resources :avaliacaos
   end

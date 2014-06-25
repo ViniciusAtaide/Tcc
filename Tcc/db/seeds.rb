@@ -6,12 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-a = Aluno.create nome: "Aluno",
-                 responsavel: "Responsavel",
+a = Aluno.create nome: 'Aluno',
+                 responsavel: 'Responsavel',
                  fone: 12345,
                  sexo: true
-t = Turma.create turno: "Manhã",
-                 sub: "A",
+t = Turma.create turno: 'Manhã',
+                 sub: 'A',
                  serie: 7
 m = Matricula.create turma: t,
                      aluno: a
@@ -23,3 +23,12 @@ pl = Plano.create descricao: 'Ensinar o básico',
                   disciplina: d,
                   professor: p,
                   turma: t
+pr = Prova.create descricao: 'Prova 1'
+
+Avaliacao.create periodo: 1,
+                 ano: 2014,
+                 prova: pr,
+                 disciplina: d,
+                 matricula: m
+
+
