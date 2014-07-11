@@ -1,3 +1,3 @@
 class Aluno < ActiveRecord::Base
-	has_one :matricula
+	has_many :matriculas
 end

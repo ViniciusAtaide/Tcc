@@ -4,10 +4,7 @@ Rails.application.routes.draw do
   devise_for :useres
   devise_for :admin_useres, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :matriculas do
-    resources :avaliacaos
-  end
-
+  
   root 'matriculas#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
